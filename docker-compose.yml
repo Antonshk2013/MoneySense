@@ -1,0 +1,10 @@
+services:
+
+  moneysense:
+    build: .
+    container_name: moneysense_mcp
+
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
